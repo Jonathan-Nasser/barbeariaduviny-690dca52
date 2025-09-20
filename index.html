@@ -1,409 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarberShop Elite - Estilo & Tradição</title>
-    <meta name="description" content="Barbearia moderna com os melhores profissionais. Cortes masculinos, barbas, tratamentos e estilo único. Agende já seu horário.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h1><i class="fas fa-cut"></i> BarberShop Elite</h1>
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <a href="#inicio" class="nav-link">Início</a>
-                <a href="#servicos" class="nav-link">Serviços</a>
-                <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#galeria" class="nav-link">Galeria</a>
-                <a href="#contato" class="nav-link">Contato</a>
-            </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop Elite - Estilo & Tradição | Barbearia Premium</title>
+    <meta name="description" content="Barbearia moderna com os melhores profissionais. Cortes masculinos, barbas, tratamentos e estilo único. Agende já seu horário na BarberShop Elite." />
+    <meta name="keywords" content="barbearia, corte masculino, barba, São Paulo, premium, tradição, moderno" />
+    <meta name="author" content="BarberShop Elite" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://barbershopelite.com/" />
+    <meta property="og:title" content="BarberShop Elite - Estilo & Tradição" />
+    <meta property="og:description" content="Barbearia moderna com os melhores profissionais. Cortes masculinos, barbas, tratamentos e estilo único." />
+    <meta property="og:image" content="/og-image.jpg" />
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="title-line">Estilo Moderno</span>
-                <span class="title-line highlight">Tradição Clássica</span>
-            </h1>
-            <p class="hero-subtitle">A arte de cortar cabelo elevada ao mais alto nível. Experimente o melhor em cuidados masculinos.</p>
-            <div class="hero-buttons">
-                <button class="cta-primary">
-                    <i class="fas fa-calendar-alt"></i>
-                    Agendar Horário
-                </button>
-                <button class="cta-secondary">
-                    <i class="fas fa-play"></i>
-                    Conheça Nosso Trabalho
-                </button>
-            </div>
-            <div class="hero-social">
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <div class="stat-number" data-target="15">0</div>
-                <div class="stat-label">Anos de Experiência</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="5000">0</div>
-                <div class="stat-label">Clientes Satisfeitos</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" data-target="100">0</div>
-                <div class="stat-label">Qualidade Garantida</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="servicos" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nossos Serviços</h2>
-                <p class="section-subtitle">Cuidados especializados para o homem moderno</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card premium">
-                    <div class="service-icon">
-                        <i class="fas fa-cut"></i>
-                    </div>
-                    <h3>Corte Premium</h3>
-                    <p>Corte personalizado com técnicas modernas e acabamento impecável</p>
-                    <div class="service-features">
-                        <span>✓ Consulta de estilo</span>
-                        <span>✓ Lavagem completa</span>
-                        <span>✓ Finalização</span>
-                    </div>
-                    <div class="service-price">R$ 45</div>
-                    <button class="service-btn">Agendar</button>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Barba Completa</h3>
-                    <p>Aparar, modelar e cuidados especiais para sua barba</p>
-                    <div class="service-features">
-                        <span>✓ Modelagem</span>
-                        <span>✓ Navalha tradicional</span>
-                        <span>✓ Hidratação</span>
-                    </div>
-                    <div class="service-price">R$ 30</div>
-                    <button class="service-btn">Agendar</button>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Tratamento Capilar</h3>
-                    <p>Cuidados especiais para manter seus cabelos saudáveis</p>
-                    <div class="service-features">
-                        <span>✓ Análise capilar</span>
-                        <span>✓ Massagem relaxante</span>
-                        <span>✓ Produtos premium</span>
-                    </div>
-                    <div class="service-price">R$ 50</div>
-                    <button class="service-btn">Agendar</button>
-                </div>
-
-                <div class="service-card highlight">
-                    <div class="service-badge">Mais Popular</div>
-                    <div class="service-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <h3>Pacote Executivo</h3>
-                    <p>A experiência completa para o homem de negócios</p>
-                    <div class="service-features">
-                        <span>✓ Corte + Barba</span>
-                        <span>✓ Tratamento VIP</span>
-                        <span>✓ Bebida cortesia</span>
-                    </div>
-                    <div class="service-price">
-                        <span class="old-price">R$ 125</span>
-                        <span class="new-price">R$ 99</span>
-                    </div>
-                    <button class="service-btn primary">Agendar Agora</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="section-header">
-                        <h2 class="section-title">Nossa História</h2>
-                        <p class="section-subtitle">Tradição familiar desde 2009</p>
-                    </div>
-                    <p class="about-description">
-                        Há mais de uma década, nossa barbearia tem sido sinônimo de qualidade e tradição. 
-                        Combinamos técnicas clássicas com tendências modernas para oferecer sempre o melhor 
-                        atendimento aos nossos clientes.
-                    </p>
-                    <p class="about-description">
-                        Nossa equipe é formada por profissionais experientes e apaixonados pela arte de 
-                        cortar cabelo, sempre atualizados com as últimas tendências e técnicas do mercado.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Profissionais Certificados</h4>
-                                <p>Equipe qualificada e em constante atualização</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Produtos Premium</h4>
-                                <p>Utilizamos apenas produtos das melhores marcas</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Pontualidade</h4>
-                                <p>Respeitamos seu tempo e horário agendado</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-container">
-                        <div class="about-img-placeholder">
-                            <i class="fas fa-store"></i>
-                            <span>Nossa Barbearia</span>
-                        </div>
-                        <div class="image-decoration"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="galeria" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nossos Trabalhos</h2>
-                <p class="section-subtitle">Confira alguns dos nossos melhores cortes</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item" data-category="cortes">
-                    <div class="gallery-img-placeholder">
-                        <i class="fas fa-cut"></i>
-                        <span>Corte Moderno</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <button class="gallery-btn"><i class="fas fa-eye"></i></button>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="barbas">
-                    <div class="gallery-img-placeholder">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Barba Clássica</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <button class="gallery-btn"><i class="fas fa-eye"></i></button>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="cortes">
-                    <div class="gallery-img-placeholder">
-                        <i class="fas fa-scissors"></i>
-                        <span>Fade Profissional</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <button class="gallery-btn"><i class="fas fa-eye"></i></button>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="barbas">
-                    <div class="gallery-img-placeholder">
-                        <i class="fas fa-male"></i>
-                        <span>Estilo Executivo</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <button class="gallery-btn"><i class="fas fa-eye"></i></button>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="cortes">
-                    <div class="gallery-img-placeholder">
-                        <i class="fas fa-cut"></i>
-                        <span>Corte Degradê</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <button class="gallery-btn"><i class="fas fa-eye"></i></button>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="barbas">
-                    <div class="gallery-img-placeholder">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Barba Moderna</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <button class="gallery-btn"><i class="fas fa-eye"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Agende Seu Horário</h2>
-                <p class="section-subtitle">Entre em contato conosco e garante seu atendimento</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Endereço</h4>
-                            <p>Rua dos Barbeiros, 123<br>Centro - São Paulo, SP</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Telefone</h4>
-                            <p>(11) 9999-9999</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Horário de Funcionamento</h4>
-                            <p>Segunda a Sexta: 9h às 19h<br>Sábado: 9h às 17h</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <p>(11) 9999-9999</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" placeholder="Seu nome" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Seu email" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="tel" placeholder="Seu telefone">
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Escolha um serviço</option>
-                                <option value="corte">Corte Premium</option>
-                                <option value="barba">Barba Completa</option>
-                                <option value="tratamento">Tratamento Capilar</option>
-                                <option value="executivo">Pacote Executivo</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Sua mensagem (opcional)" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">
-                        <i class="fas fa-paper-plane"></i>
-                        Enviar Mensagem
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3><i class="fas fa-cut"></i> BarberShop Elite</h3>
-                    <p>Tradição e modernidade em cada corte. Cuidando do visual masculino com excelência há mais de 15 anos.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Serviços</h4>
-                    <ul>
-                        <li><a href="#servicos">Corte Premium</a></li>
-                        <li><a href="#servicos">Barba Completa</a></li>
-                        <li><a href="#servicos">Tratamento Capilar</a></li>
-                        <li><a href="#servicos">Pacote Executivo</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#sobre">Sobre Nós</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <div class="footer-contact">
-                        <p><i class="fas fa-map-marker-alt"></i> Rua dos Barbeiros, 123</p>
-                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
-                        <p><i class="fas fa-envelope"></i> contato@barbershopelite.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 BarberShop Elite. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://barbershopelite.com/" />
+    <meta property="twitter:title" content="BarberShop Elite - Estilo & Tradição" />
+    <meta property="twitter:description" content="Barbearia moderna com os melhores profissionais. Cortes masculinos, barbas, tratamentos e estilo único." />
+    <meta property="twitter:image" content="/og-image.jpg" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://barbershopelite.com/" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "BarberShop Elite",
+      "description": "Barbearia moderna com os melhores profissionais em São Paulo",
+      "url": "https://barbershopelite.com",
+      "telephone": "+5511999999999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua dos Barbeiros, 123",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "openingHours": [
+        "Mo-Fr 09:00-19:00",
+        "Sa 09:00-17:00"
+      ],
+      "priceRange": "$$",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Barbearia",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Corte Premium"
+            },
+            "price": "45",
+            "priceCurrency": "BRL"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Barba Completa"
+            },
+            "price": "30",
+            "priceCurrency": "BRL"
+          }
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
